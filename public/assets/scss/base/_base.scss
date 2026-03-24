@@ -6,11 +6,11 @@ body {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
-    font-family: fonts.$font-secondary;
-    font-size: fonts.$font-size-base;
+    font-family: fonts.$font-secondary !important;
+    font-size: fonts.$font-size-base !important;
     line-height: 1.4;
-    background-color: colors.$grey;
-    color: colors.$dark;
+    background-color: colors.$grey !important;
+    color: colors.$dark !important;
 }
 
 header,
@@ -26,6 +26,6 @@ h1,
 h2,
 h3,
 h4 {
-    font-family: fonts.$font-primary;
-    font-weight: bold;
+    font-family: fonts.$font-primary !important;
+    font-weight: bold !important;
 }
