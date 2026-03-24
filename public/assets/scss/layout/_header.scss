@@ -1,0 +1,15 @@
+@use "../utils/fonts";
+@use "../utils/variables";
+@use "../utils/colors";
+
+.navbar {
+    min-height: variables.$header-height-mobile;
+    background-color: colors.$dark;
+    color: colors.$grey;
+
+    @media (max-width: 992px) {
+        .navbar {
+            min-height: variables.$header-height-desktop;
+        }
+    }
+}

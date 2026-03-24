@@ -1,0 +1,21 @@
+@use "../utils/variables";
+@use "../utils/colors";
+
+footer {
+    min-height: variables.$footer-height-mobile;
+    background-color: colors.$dark;
+    color: colors.$grey;
+
+    a {
+        color: colors.$grey;
+        text-decoration: none;
+    }
+
+    i {
+        color: colors.$grey;
+    }
+
+    @media (min-width: 768px) {
+        min-height: variables.$footer-height-desktop;
+    }
+}
