@@ -3,3 +3,18 @@ $blue:#2EA7F2;
 $yellow-light: #F2D680;
 $yellow-dark:#F2CA7E;
 $grey: #F2EDE4;
+
+.bg-dark {
+    background-color: $dark;
+    color: $grey;
+}
+
+.bg-light {
+    background-color: $grey;
+    color:$dark;
+}
+
+.text-light{
+    color: $grey;
+}
+
