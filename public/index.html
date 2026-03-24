@@ -26,7 +26,8 @@
     />
 
     <!-- Style -->
-    <link rel="stylesheet" href="/public/assets/css/style.css" />
+    <link rel="stylesheet" href="/assets/css/style.css" />
+
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -54,8 +55,183 @@
     <title>Delphine Fumex - Développeuse Web</title>
   </head>
   <body>
-    <header></header>
-    <main></main>
-    <footer></footer>
+    <header>
+      <nav class="navbar navbar-expand-lg position-fixed w-100 z-3 pt-2">
+        <div class="container-fluid">
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div
+            class="collapse navbar-collapse justify-content-end"
+            id="navbarNav"
+          >
+            <ul class="navbar-nav">
+              <li class="nav-item me-3">
+                <a class="nav-link text-light" href="hero">Accueil</a>
+              </li>
+              <li class="nav-item me-3">
+                <a class="nav-link text-light" href="presentation"
+                  >Présentation</a
+                >
+              </li>
+              <li class="nav-item me-3">
+                <a class="nav-link text-light" href="skills">Compétences</a>
+              </li>
+              <li class="nav-item me-3">
+                <a class="nav-link text-light" href="portfolio">portfolio</a>
+              </li>
+              <li class="nav-item me-3">
+                <a class="nav-link text-light" href="contact">Contact</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <!-- Hero -->
+      <section id="hero" class="container-fluid py-5">
+        <div class="container p-5">
+          <div class="row justify-content-center align-content-center my-5">
+            <h2 class="text-center text-light my-3">Delphine Fumex</h2>
+            <h1 class="text-center text-light my-3">Développeuse Web</h1>
+            <p class="text-center text-light my-3">
+              Je conçois des applications modernes et performantes
+            </p>
+          </div>
+
+          <!-- Boutons -->
+          <div
+            class="row flex-column flex-md-row justify-content-md-center gap-4 my-5"
+          >
+            <div class="col-12 col-md-3">
+              <a
+                href="#portfolio"
+                class="btn w-100 w-md-auto px-md-4"
+                aria-label="Mes projets"
+                >Mes projets</a
+              >
+            </div>
+            <div class="col-12 col-md-3">
+              <a
+                href="#contact"
+                class="btn w-100 w-md-auto px-md-4"
+                aria-label="Me contacter"
+                >Me contacter</a
+              >
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Présentation -->
+      <section id="presentation" class="container-fluid py-5">
+        <div class="container">
+          <div class="row justify-content-between align-items-center">
+            <h2 class="text-center">Présentation</h2>
+            <!-- Paragraphe de présentation-->
+            <div class="col-12 col-md-10 col-lg-6 text-center mx-auto py-5">
+              <p>
+                Après 15 années d'expérience enrichissante dans l'hôtellerie de
+                luxe à Paris, où j'ai développé un sens aigu du service client,
+                des compétences solides en gestion de situations complexes,
+                pratiqué l’anglais quotidiennement et participé à la mise en
+                place de nouvelles technologies de gestion hôtelière, j'ai
+                décidé d'entreprendre une reconversion professionnelle en tant
+                que développeur web et web Mobile.
+                <br />
+                Ayant toujours été passionné par l'utilisation des technologies
+                informatiques tant dans ma vie personnelle que professionnelle,
+                cette transition me permet de combiner ma rigueur, ma capacité
+                d'adaptation et mon aisance relationnelle acquises dans
+                l'industrie hôtelière avec mes nouvelles compétences techniques.
+                <br />
+                Je recherche aujourd'hui une opportunité qui me permettra
+                d'appliquer mon expertise en expérience client et mes
+                compétences fraîchement acquises en développement pour créer des
+                solutions web innovantes et centrées sur l'utilisateur.
+              </p>
+            </div>
+            <!-- Image-->
+            <div class="col-12 col-md-10 col-lg-4 mx-auto py-5">
+              <img
+                src="/public/assets/img/section1.webp"
+                class="img-fluid rounded mx-auto d-block"
+                alt="lignes de code"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Compétences -->
+      <section id="skills" class="container-fluid py-5">
+        <div class="container">
+          <div class="row justify-content-between">
+            <div
+              class="col-12 col-md-10 col-lg-8 text-center mx-auto py-5"
+            ></div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Portfolio -->
+      <section id="portfolio" class="container-fluid py-5">
+        <div class="container">
+          <div class="row justify-content-between">
+            <div
+              class="col-12 col-md-10 col-lg-8 text-center mx-auto py-5"
+            ></div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Contact -->
+      <section id="contact" class="container-fluid py-5">
+        <div class="container">
+          <div class="row justify-content-between">
+            <div
+              class="col-12 col-md-10 col-lg-8 text-center mx-auto py-5"
+            ></div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="container-fluid">
+      <div class="container p-4">
+        <div class="row text-center text-md-start justify-content-evenly">
+          <!-- Réseaux sociaux -->
+          <div class="col text-center col-12 col-md-4 mb-4 mb-md-0">
+            <a
+              href="https://www.linkedin.com/in/delphine-fumex/"
+              target="_blank"
+              class="text-blue"
+            >
+              <i class="fa-brands fa-linkedin"></i>
+            </a>
+            <a
+              href="https://github.com/Delphine2004"
+              target="_blank"
+              class="text-blue"
+            >
+              <i class="fa-brands fa-github"></i>
+            </a>
+          </div>
+
+          <!-- Mentions et copyright -->
+          <div class="col text-center col-12 col-md-4 mb-4 mb-md-0">
+            <p>&#169;Delphine FUMEX | Tous droits réservés</p>
+          </div>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>
