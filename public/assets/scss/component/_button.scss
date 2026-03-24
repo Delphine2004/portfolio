@@ -1,0 +1,11 @@
+@use "../utils/colors";
+
+.btn {
+    background-color: colors.$blue !important;
+    color: colors.$grey !important;
+}
+
+.btn:hover {
+    background-color: colors.$yellow-light !important;
+    color: colors.$dark !important;
+}
