@@ -1,4 +1,18 @@
 @charset "UTF-8";
+.bg-dark {
+  background-color: #262526;
+  color: #F2EDE4;
+}
+
+.bg-light {
+  background-color: #F2EDE4;
+  color: #262526;
+}
+
+.text-light {
+  color: #F2EDE4;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -16,11 +30,11 @@ body {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
-  font-family: "Roboto", sans-serif;
-  font-size: 16px;
+  font-family: "Roboto", sans-serif !important;
+  font-size: 16px !important;
   line-height: 1.4;
-  background-color: #F2EDE4;
-  color: #262526;
+  background-color: #F2EDE4 !important;
+  color: #262526 !important;
 }
 
 header,
@@ -36,14 +50,18 @@ h1,
 h2,
 h3,
 h4 {
-  font-family: "Open Sans", sans-serif;
-  font-weight: bold;
+  font-family: "Open Sans", sans-serif !important;
+  font-weight: bold !important;
 }
 
 .navbar {
   min-height: 60px;
   background-color: #262526;
   color: #F2EDE4;
+}
+.navbar .navbar a {
+  color: #F2EDE4;
+  font-weight: bold;
 }
 @media (max-width: 992px) {
   .navbar .navbar {
@@ -67,6 +85,31 @@ footer i {
   footer {
     min-height: 190px;
   }
+}
+
+.btn {
+  background-color: #2EA7F2 !important;
+  color: #F2EDE4 !important;
+}
+
+.btn:hover {
+  background-color: #F2D680 !important;
+  color: #262526 !important;
+}
+
+#hero {
+  background-image: url("/assets/img/hero.webp");
+  background-size: cover; /* L'image couvre toute la section */
+  background-position: center; /* Centre l'image */
+  background-repeat: no-repeat;
+}
+
+h1 {
+  font-size: 26px !important;
+}
+
+h2 {
+  font-size: 40px !important;
 }
 
 /*# sourceMappingURL=style.css.map */
