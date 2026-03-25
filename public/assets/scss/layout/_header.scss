@@ -7,9 +7,12 @@
     background-color: colors.$dark;
     color: colors.$grey;
 
+    .nav-link:hover {
+        color:colors.$blue !important;
+        font-weight: bold;
+    }
+
     @media (max-width: 992px) {
-        .navbar {
             min-height: variables.$header-height-desktop;
-        }
     }
 }
