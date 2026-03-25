@@ -1,16 +1,19 @@
-
 #hero {
   background-image: url("/assets/img/hero.webp");
   background-size: cover; /* L'image couvre toute la section */
   background-position: center; /* Centre l'image */
   background-repeat: no-repeat;
-}
+  min-height: 100vh;
 
-h1 {
-    font-size: 26px !important;
+  h1 {
+    font-size: 2rem !important;
+  }
 
-}
+  h2 {
+    font-size: 3rem !important;
+  }
+  @media (min-width: 992px) {
+    min-height:unset;
+  }
 
-h2 {
-    font-size: 40px !important;
 }

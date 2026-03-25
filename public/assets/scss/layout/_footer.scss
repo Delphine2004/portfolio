@@ -2,20 +2,22 @@
 @use "../utils/colors";
 
 footer {
-    min-height: variables.$footer-height-mobile;
-    background-color: colors.$dark;
+  min-height: variables.$footer-height-mobile;
+  background-color: colors.$dark;
+  color: colors.$grey;
+
+  a {
     color: colors.$grey;
+    text-decoration: none;
+  }
 
-    a {
-        color: colors.$grey;
-        text-decoration: none;
-    }
+  i {
+    color: colors.$grey;
+    font-size: 2rem;
+    margin: 1.5rem;
+  }
 
-    i {
-        color: colors.$grey;
-    }
-
-    @media (min-width: 768px) {
-        min-height: variables.$footer-height-desktop;
-    }
+  @media (min-width: 768px) {
+    min-height: variables.$footer-height-desktop;
+  }
 }
