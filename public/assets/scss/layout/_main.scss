@@ -1,0 +1,142 @@
+@use "../utils/colors";
+
+/* Section présentation*/
+
+#presentation img {
+  border-radius: 16px;
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#presentation .row:hover img {
+  transform: scale(1.02);
+}
+
+.linkedin-link {
+  color: colors.$dark;
+  font-weight: 500;
+  transition: all 0.3s ease;
+
+  i {
+    font-size: 1.5rem;
+    transition: transform 0.3s ease;
+  }
+
+  &:hover {
+    color: colors.$blue;
+    transform: translateY(-2px);
+
+    i {
+      transform: scale(1.1);
+    }
+  }
+}
+
+/* Section compétences*/
+.skills-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+
+  li {
+    padding: 8px 12px;
+    margin-bottom: 8px;
+    background: rgba(0, 0, 0, 0.05);
+    border-radius: 8px;
+
+    font-weight: 500;
+    line-height: 1.6;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+  }
+}
+
+.skill-card {
+  overflow: hidden;
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
+
+  &:hover {
+    transform: translateY(-5px);
+  }
+
+  .card-body {
+    padding: 2rem 1rem;
+  }
+}
+
+.skill-title {
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+
+/* Section projets*/
+
+.project-card {
+  background-color: colors.$dark !important;
+  color: colors.$grey !important;
+  overflow: hidden;
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
+
+  &:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+  }
+
+  .card-header {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    padding: 2rem;
+
+    .project-img {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover; // ✅ garde l'image proportionnelle et couvre tout
+      transition:
+        transform 0.3s ease,
+        filter 0.3s ease;
+    }
+
+    .overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.4); // ✅ fond opacifié
+      opacity: 0;
+      transition: opacity 0.3s ease;
+      gap: 1rem;
+      padding: 2rem;
+    }
+
+    &:hover .overlay {
+      opacity: 1; // ✅ overlay et boutons apparaissent
+    }
+
+    &:hover .project-img {
+      transform: scale(1.05); // léger zoom au hover
+    }
+  }
+
+  .card-body {
+    padding: 1.5rem;
+  }
+
+  .icons i {
+    color: colors.$yellow;
+    font-size: 2rem;
+  }
+}
