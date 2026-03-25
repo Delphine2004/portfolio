@@ -1,16 +1,24 @@
 @charset "UTF-8";
 .bg-dark {
   background-color: #262526;
-  color: #F2EDE4;
+  color: #f2ede4;
 }
 
 .bg-light {
-  background-color: #F2EDE4;
-  color: #262526;
+  background-color: #f2ede4 !important;
+  color: #262526 !important;
 }
 
 .text-light {
-  color: #F2EDE4;
+  color: #f2ede4;
+}
+
+.text-blue {
+  color: #2ea7f2;
+}
+
+.text-yellow {
+  color: #f2d680;
 }
 
 * {
@@ -22,7 +30,7 @@
 }
 
 a {
-  text-decoration: none;
+  text-decoration: none !important;
   cursor: pointer;
 }
 
@@ -33,7 +41,7 @@ body {
   font-family: "Roboto", sans-serif !important;
   font-size: 16px !important;
   line-height: 1.4;
-  background-color: #F2EDE4 !important;
+  background-color: #f2ede4 !important;
   color: #262526 !important;
 }
 
@@ -54,46 +62,169 @@ h4 {
   font-weight: bold !important;
 }
 
+p {
+  text-align: left;
+  line-height: 1.7;
+  font-size: 1.05rem;
+}
+
 .navbar {
   min-height: 60px;
   background-color: #262526;
-  color: #F2EDE4;
+  color: #f2ede4;
 }
-.navbar .navbar a {
-  color: #F2EDE4;
+.navbar .nav-link:hover {
+  color: #2ea7f2 !important;
   font-weight: bold;
 }
 @media (max-width: 992px) {
-  .navbar .navbar {
+  .navbar {
     min-height: 55px;
   }
 }
 
 footer {
-  min-height: 310px;
+  min-height: 180px;
   background-color: #262526;
-  color: #F2EDE4;
+  color: #f2ede4;
 }
 footer a {
-  color: #F2EDE4;
+  color: #f2ede4;
   text-decoration: none;
 }
 footer i {
-  color: #F2EDE4;
+  color: #f2ede4;
+  font-size: 2rem;
+  margin: 1.5rem;
 }
 @media (min-width: 768px) {
   footer {
-    min-height: 190px;
+    min-height: 150px;
   }
 }
 
+/* Section présentation*/
+#presentation img {
+  border-radius: 16px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#presentation .row:hover img {
+  transform: scale(1.02);
+}
+
+.linkedin-link {
+  color: #262526;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+.linkedin-link i {
+  font-size: 1.5rem;
+  transition: transform 0.3s ease;
+}
+.linkedin-link:hover {
+  color: #2ea7f2;
+  transform: translateY(-2px);
+}
+.linkedin-link:hover i {
+  transform: scale(1.1);
+}
+
+/* Section compétences*/
+.skills-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.skills-list li {
+  padding: 8px 12px;
+  margin-bottom: 8px;
+  background: rgba(0, 0, 0, 0.05);
+  border-radius: 8px;
+  font-weight: 500;
+  line-height: 1.6;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.skill-card {
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.skill-card:hover {
+  transform: translateY(-5px);
+}
+.skill-card .card-body {
+  padding: 2rem 1rem;
+}
+
+.skill-title {
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+
+/* Section projets*/
+.project-card {
+  background-color: #262526 !important;
+  color: #f2ede4 !important;
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.project-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
+.project-card .card-header {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  padding: 2rem;
+}
+.project-card .card-header .project-img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease, filter 0.3s ease;
+}
+.project-card .card-header .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.4);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  gap: 1rem;
+  padding: 2rem;
+}
+.project-card .card-header:hover .overlay {
+  opacity: 1;
+}
+.project-card .card-header:hover .project-img {
+  transform: scale(1.05);
+}
+.project-card .card-body {
+  padding: 1.5rem;
+}
+.project-card .icons i {
+  color: #f2d680;
+  font-size: 2rem;
+}
+
 .btn {
-  background-color: #2EA7F2 !important;
-  color: #F2EDE4 !important;
+  background-color: #2ea7f2 !important;
+  color: #f2ede4 !important;
 }
 
 .btn:hover {
-  background-color: #F2D680 !important;
+  background-color: #f2d680 !important;
   color: #262526 !important;
 }
 
@@ -102,14 +233,18 @@ footer i {
   background-size: cover; /* L'image couvre toute la section */
   background-position: center; /* Centre l'image */
   background-repeat: no-repeat;
+  min-height: 100vh;
 }
-
-h1 {
-  font-size: 26px !important;
+#hero h1 {
+  font-size: 2rem !important;
 }
-
-h2 {
-  font-size: 40px !important;
+#hero h2 {
+  font-size: 3rem !important;
+}
+@media (min-width: 992px) {
+  #hero {
+    min-height: unset;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
