@@ -56,8 +56,10 @@
   </head>
   <body>
     <header>
-      <nav class="navbar navbar-expand-lg position-fixed w-100 z-3 pt-2">
-        <div class="container-fluid">
+      <nav
+        class="navbar navbar-expand-lg position-fixed navbar-dark w-100 z-3 pt-2"
+      >
+        <div class="container-fluid justify-content-end">
           <button
             class="navbar-toggler"
             type="button"
@@ -73,23 +75,23 @@
             class="collapse navbar-collapse justify-content-end"
             id="navbarNav"
           >
-            <ul class="navbar-nav">
-              <li class="nav-item me-3">
-                <a class="nav-link text-light" href="hero">Accueil</a>
+            <ul class="navbar-nav me-3">
+              <li class="nav-item mx-3">
+                <a class="nav-link text-light" href="#hero">Accueil</a>
               </li>
-              <li class="nav-item me-3">
-                <a class="nav-link text-light" href="presentation"
+              <li class="nav-item mx-3">
+                <a class="nav-link text-light" href="#presentation"
                   >Présentation</a
                 >
               </li>
-              <li class="nav-item me-3">
-                <a class="nav-link text-light" href="skills">Compétences</a>
+              <li class="nav-item mx-3">
+                <a class="nav-link text-light" href="#skills">Compétences</a>
               </li>
-              <li class="nav-item me-3">
-                <a class="nav-link text-light" href="portfolio">portfolio</a>
+              <li class="nav-item mx-3">
+                <a class="nav-link text-light" href="#portfolio">Portfolio</a>
               </li>
-              <li class="nav-item me-3">
-                <a class="nav-link text-light" href="contact">Contact</a>
+              <li class="nav-item mx-3">
+                <a class="nav-link text-light" href="#contact">Contact</a>
               </li>
             </ul>
           </div>
@@ -103,7 +105,7 @@
           <div class="row justify-content-center align-content-center my-5">
             <h2 class="text-center text-light my-3">Delphine Fumex</h2>
             <h1 class="text-center text-light my-3">Développeuse Web</h1>
-            <p class="text-center text-light my-3">
+            <p class="text-center text-light my-5">
               Je conçois des applications modernes et performantes
             </p>
           </div>
@@ -112,19 +114,13 @@
           <div
             class="row flex-column flex-md-row justify-content-md-center gap-4 my-5"
           >
-            <div class="col-12 col-md-3">
-              <a
-                href="#portfolio"
-                class="btn w-100 w-md-auto px-md-4"
-                aria-label="Mes projets"
+            <div class="col-12 col-md-3 col-lg-2">
+              <a href="#portfolio" class="btn w-100" aria-label="Mes projets"
                 >Mes projets</a
               >
             </div>
-            <div class="col-12 col-md-3">
-              <a
-                href="#contact"
-                class="btn w-100 w-md-auto px-md-4"
-                aria-label="Me contacter"
+            <div class="col-12 col-md-3 col-lg-2">
+              <a href="#contact" class="btn w-100" aria-label="Me contacter"
                 >Me contacter</a
               >
             </div>
@@ -135,25 +131,36 @@
       <!-- Présentation -->
       <section id="presentation" class="container-fluid py-5">
         <div class="container">
-          <div class="row justify-content-between align-items-center">
-            <h2 class="text-center">Présentation</h2>
+          <!-- Titre -->
+          <div class="row">
+            <div class="col-12 text-center mb-5">
+              <h2>Présentation de mon parcours</h2>
+            </div>
+          </div>
+
+          <!-- Contenu -->
+          <div class="row align-items-center g-4">
             <!-- Paragraphe de présentation-->
-            <div class="col-12 col-md-10 col-lg-6 text-center mx-auto py-5">
+            <div class="col-12 col-lg-6 order-2 order-lg-1">
               <p>
-                Après 15 années d'expérience enrichissante dans l'hôtellerie de
-                luxe à Paris, où j'ai développé un sens aigu du service client,
-                des compétences solides en gestion de situations complexes,
-                pratiqué l’anglais quotidiennement et participé à la mise en
-                place de nouvelles technologies de gestion hôtelière, j'ai
-                décidé d'entreprendre une reconversion professionnelle en tant
-                que développeur web et web Mobile.
-                <br />
+                Après <strong>15 années d'expérience</strong> enrichissante dans
+                l'hôtellerie de luxe à Paris, où j'ai développé un sens aigu du
+                service client, des compétences solides en gestion de situations
+                complexes, pratiqué l’anglais quotidiennement et participé à la
+                mise en place de nouvelles technologies de gestion hôtelière,
+                j'ai décidé d'entreprendre une reconversion professionnelle en
+                tant que développeur web et web Mobile.
+              </p>
+
+              <p>
                 Ayant toujours été passionné par l'utilisation des technologies
                 informatiques tant dans ma vie personnelle que professionnelle,
                 cette transition me permet de combiner ma rigueur, ma capacité
                 d'adaptation et mon aisance relationnelle acquises dans
                 l'industrie hôtelière avec mes nouvelles compétences techniques.
-                <br />
+              </p>
+
+              <p>
                 Je recherche aujourd'hui une opportunité qui me permettra
                 d'appliquer mon expertise en expérience client et mes
                 compétences fraîchement acquises en développement pour créer des
@@ -161,24 +168,147 @@
               </p>
             </div>
             <!-- Image-->
-            <div class="col-12 col-md-10 col-lg-4 mx-auto py-5">
+            <div class="col-12 col-lg-6 order-1 order-lg-2 text-center">
               <img
-                src="/public/assets/img/section1.webp"
-                class="img-fluid rounded mx-auto d-block"
+                src="/assets/img/section1.webp"
+                class="img-fluid"
                 alt="lignes de code"
               />
+            </div>
+          </div>
+
+          <!-- Lien linkedin -->
+          <div class="row mt-5">
+            <div class="col-12 text-center">
+              <a
+                href="https://www.linkedin.com/in/delphine-fumex/"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="d-flex align-items-center justify-content-center gap-2 linkedin-link"
+              >
+                <i class="fa-brands fa-linkedin"></i>
+                <span>Voir mon parcours professionnel</span>
+              </a>
             </div>
           </div>
         </div>
       </section>
 
       <!-- Compétences -->
-      <section id="skills" class="container-fluid py-5">
+      <section id="skills" class="container-fluid bg-dark py-5">
         <div class="container">
-          <div class="row justify-content-between">
-            <div
-              class="col-12 col-md-10 col-lg-8 text-center mx-auto py-5"
-            ></div>
+          <!-- Titre -->
+          <div class="row">
+            <div class="col-12 text-center mb-5">
+              <h2 class="text-blue">Compétences</h2>
+            </div>
+          </div>
+
+          <!-- Les cartes-->
+          <div class="row g-4">
+            <div class="col-12 col-md-6 col-lg-4">
+              <!-- langages -->
+              <div class="card skill-card h-100">
+                <div class="card-body d-flex flex-column bg-light">
+                  <h3 class="text-center mb-4 skill-title">Langages</h3>
+                  <ul class="skills-list">
+                    <li><i class="fa-brands fa-html5"></i>HTML5</li>
+                    <li><i class="fa-brands fa-css3-alt"></i>CSS3</li>
+                    <li><i class="fa-brands fa-js"></i>JavaScript ES6</li>
+                    <li><i class="fa-brands fa-php"></i>PHP</li>
+                    <li><i class="fa-solid fa-database"></i>SQL</li>
+                    <li><i class="fa-solid fa-database"></i>NoSQL</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-12 col-md-6 col-lg-4">
+              <!-- Frameworks et librairies -->
+              <div class="card skill-card h-100">
+                <div class="card-body d-flex flex-column bg-light">
+                  <h3 class="text-center mb-4 skill-title">
+                    Frameworks & librairies
+                  </h3>
+                  <ul class="skills-list">
+                    <li><i class="fa-brands fa-bootstrap"></i>Bootstrap</li>
+                    <li><i class="fa-brands fa-sass"></i>SASS</li>
+                    <li><i class="fa-brands fa-symfony"></i>Symfony</li>
+                    <li><i class="fa-brands fa-symfony"></i>Twig</li>
+                    <li><i class="fa-brands fa-react"></i>React</li>
+                    <li><i class="fa-brands fa-php"></i>Composer</li>
+                    <li><i class="fa-brands fa-npm"></i>NPM</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-12 col-md-6 col-lg-4">
+              <!-- Environnement de travail -->
+              <div class="card skill-card h-100">
+                <div class="card-body d-flex flex-column bg-light">
+                  <h3 class="text-center mb-4 skill-title">
+                    Outils & environnement
+                  </h3>
+                  <ul class="skills-list">
+                    <li>
+                      <i class="fa-brands fa-git-alt"></i>Git &
+                      <i class="fa-brands fa-github"></i> GitHub
+                    </li>
+                    <li><i class="fa-brands fa-docker"></i>Docker</li>
+                    <li>Figma, Gimp, Draw.io</li>
+                    <li>JMerise</li>
+                    <li>VS Code</li>
+                    <li>Terminal / Bash</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-12 col-md-6 col-lg-4">
+              <!-- Hôtellerie -->
+              <div class="card skill-card h-100">
+                <div class="card-body d-flex flex-column bg-light">
+                  <h3 class="text-center mb-4 skill-title">Outils hôteliers</h3>
+                  <ul class="skills-list">
+                    <li>D-Edge (CRS, CM et GDS)</li>
+                    <li>E-Axess (CMS)</li>
+                    <li>Extranets OTA</li>
+                    <li>Hotsoft & Protel</li>
+                    <li>Médialog & Frontres</li>
+                    <li>Hotel Concept & Opéra</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-12 col-md-6 col-lg-4">
+              <!-- Langues -->
+              <div class="card skill-card h-100">
+                <div class="card-body d-flex flex-column bg-light">
+                  <h3 class="text-center mb-4 skill-title">Langues parlées</h3>
+                  <ul class="skills-list">
+                    <li>Français - Langue maternelle</li>
+                    <li>Anglais - Niveau B1</li>
+                    <li>Espagnol - Notions scolaires</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-12 col-md-6 col-lg-4">
+              <!-- Bureautique -->
+              <div class="card skill-card h-100">
+                <div class="card-body d-flex flex-column bg-light">
+                  <h3 class="text-center mb-4 skill-title">Bureautique</h3>
+                  <ul class="skills-list">
+                    <li>Microsoft 365</li>
+                    <li>Google Workspace</li>
+                    <li>Trello</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </section>
@@ -186,10 +316,128 @@
       <!-- Portfolio -->
       <section id="portfolio" class="container-fluid py-5">
         <div class="container">
-          <div class="row justify-content-between">
-            <div
-              class="col-12 col-md-10 col-lg-8 text-center mx-auto py-5"
-            ></div>
+          <!-- Titre -->
+          <div class="row">
+            <div class="col-12 text-center mb-5">
+              <h2>Projets</h2>
+            </div>
+          </div>
+
+          <!-- Les cartes-->
+          <div class="row g-4">
+            <!-- projet 1 -->
+            <div class="col-12 col-md-4">
+              <div class="card project-card gb-dark h-100">
+                <div class="card-header">
+                  <img
+                    src="/assets/img/projet1.png"
+                    alt="Image page accueil projet nom"
+                    class="img-fluid"
+                  />
+                  <!-- Overlay semi-transparent -->
+                  <div
+                    class="overlay d-flex flex-column justify-content-center align-items-center"
+                  >
+                    <button class="btn w-100 mx-auto">Voir</button>
+                    <button class="btn w-100 mx-auto">Code</button>
+                  </div>
+                </div>
+
+                <div class="card-body">
+                  <h3 class="text-blue">Nom du projet</h3>
+                  <h4 class="text-yellow">Site vitrine</h4>
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam
+                    maximus, magna ut maximus t non ut urna. Donec ut aliquam
+                    dolor, in bibendum.
+                  </p>
+                </div>
+                <div class="card-footer">
+                  <div class="icons d-flex justify-content-evenly">
+                    <i class="fa-brands fa-html5"></i>
+                    <i class="fa-brands fa-css3-alt"></i>
+                    <i class="fa-brands fa-bootstrap"></i>
+                    <i class="fa-brands fa-js"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- projet 1 -->
+            <div class="col-12 col-md-4">
+              <div class="card project-card gb-dark h-100">
+                <div class="card-header">
+                  <img
+                    src="/assets/img/projet1.png"
+                    alt="Image page accueil projet nom"
+                    class="img-fluid"
+                  />
+                  <!-- Overlay semi-transparent -->
+                  <div
+                    class="overlay d-flex flex-column justify-content-center align-items-center"
+                  >
+                    <button class="btn w-100 mx-auto">Voir</button>
+                    <button class="btn w-100 mx-auto">Code</button>
+                  </div>
+                </div>
+
+                <div class="card-body">
+                  <h3 class="text-blue">Nom du projet</h3>
+                  <h4 class="text-yellow">Site vitrine</h4>
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam
+                    maximus, magna ut maximus t non ut urna. Donec ut aliquam
+                    dolor, in bibendum.
+                  </p>
+                </div>
+                <div class="card-footer">
+                  <div class="icons d-flex justify-content-evenly">
+                    <i class="fa-brands fa-html5"></i>
+                    <i class="fa-brands fa-css3-alt"></i>
+                    <i class="fa-brands fa-bootstrap"></i>
+                    <i class="fa-brands fa-js"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- projet 1 -->
+            <div class="col-12 col-md-4">
+              <div class="card project-card gb-dark h-100">
+                <div class="card-header">
+                  <img
+                    src="/assets/img/projet1.png"
+                    alt="Image page accueil projet nom"
+                    class="img-fluid"
+                  />
+                  <!-- Overlay semi-transparent -->
+                  <div
+                    class="overlay d-flex flex-column justify-content-center align-items-center"
+                  >
+                    <button class="btn w-100 mx-auto">Voir</button>
+                    <button class="btn w-100 mx-auto">Code</button>
+                  </div>
+                </div>
+
+                <div class="card-body">
+                  <h3 class="text-blue">Nom du projet</h3>
+                  <h4 class="text-yellow">Site vitrine</h4>
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam
+                    maximus, magna ut maximus t non ut urna. Donec ut aliquam
+                    dolor, in bibendum.
+                  </p>
+                </div>
+                <div class="card-footer">
+                  <div class="icons d-flex justify-content-evenly">
+                    <i class="fa-brands fa-html5"></i>
+                    <i class="fa-brands fa-css3-alt"></i>
+                    <i class="fa-brands fa-bootstrap"></i>
+                    <i class="fa-brands fa-js"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </section>
@@ -205,11 +453,12 @@
         </div>
       </section>
     </main>
+
     <footer class="container-fluid">
       <div class="container p-4">
-        <div class="row text-center text-md-start justify-content-evenly">
+        <div class="row text-center justify-content-evenly">
           <!-- Réseaux sociaux -->
-          <div class="col text-center col-12 col-md-4 mb-4 mb-md-0">
+          <div class="text-center col-12 col-md-4 mb-4">
             <a
               href="https://www.linkedin.com/in/delphine-fumex/"
               target="_blank"
@@ -227,8 +476,10 @@
           </div>
 
           <!-- Mentions et copyright -->
-          <div class="col text-center col-12 col-md-4 mb-4 mb-md-0">
-            <p>&#169;Delphine FUMEX | Tous droits réservés</p>
+          <div
+            class="text-center col-12 col-md-6 d-flex justify-content-center align-items-center mb-4"
+          >
+            <p class="m-0">&#169;Delphine FUMEX | Tous droits réservés</p>
           </div>
         </div>
       </div>
