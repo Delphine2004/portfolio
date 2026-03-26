@@ -3,16 +3,15 @@
 @use "../utils/colors";
 
 .navbar {
-    min-height: variables.$header-height-mobile;
-    background-color: colors.$dark;
-    color: colors.$grey;
+  min-height: variables.$header-height-mobile;
+  background-color: colors.$dark;
+  color: colors.$grey;
 
-    .nav-link:hover {
-        color:colors.$blue !important;
-        font-weight: bold;
-    }
+  .nav-link:hover {
+    color: colors.$blue !important;
+  }
 
-    @media (max-width: 992px) {
-            min-height: variables.$header-height-desktop;
-    }
+  @media (max-width: 992px) {
+    min-height: variables.$header-height-desktop;
+  }
 }
