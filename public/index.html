@@ -40,6 +40,7 @@
     <!-- A MODIFIER -->
 
     <!-- script -->
+    <script defer src="/assets/js/animation.js"></script>
     <script
       defer
       src="https://kit.fontawesome.com/01e8d51dea.js"
@@ -129,12 +130,12 @@
       </section>
 
       <!-- Présentation -->
-      <section id="presentation" class="container-fluid py-5">
+      <section id="presentation" class="container-fluid m-custom py-5">
         <div class="container">
           <!-- Titre -->
           <div class="row">
             <div class="col-12 text-center mb-5">
-              <h2>Présentation de mon parcours</h2>
+              <h2 class="fade-in">Présentation de mon parcours</h2>
             </div>
           </div>
 
@@ -142,7 +143,7 @@
           <div class="row align-items-center g-4">
             <!-- Paragraphe de présentation-->
             <div class="col-12 col-lg-6 order-2 order-lg-1">
-              <p>
+              <p class="fade-in">
                 Après <strong>15 années d'expérience</strong> enrichissante dans
                 l'hôtellerie de luxe à Paris, où j'ai développé un sens aigu du
                 service client, des compétences solides en gestion de situations
@@ -152,7 +153,7 @@
                 tant que développeur web et web Mobile.
               </p>
 
-              <p>
+              <p class="fade-in">
                 Ayant toujours été passionné par l'utilisation des technologies
                 informatiques tant dans ma vie personnelle que professionnelle,
                 cette transition me permet de combiner ma rigueur, ma capacité
@@ -160,7 +161,7 @@
                 l'industrie hôtelière avec mes nouvelles compétences techniques.
               </p>
 
-              <p>
+              <p class="fade-in">
                 Je recherche aujourd'hui une opportunité qui me permettra
                 d'appliquer mon expertise en expérience client et mes
                 compétences fraîchement acquises en développement pour créer des
@@ -171,7 +172,7 @@
             <div class="col-12 col-lg-6 order-1 order-lg-2 text-center">
               <img
                 src="/assets/img/section1.webp"
-                class="img-fluid"
+                class="img-fluid border-dark fade-in"
                 alt="lignes de code"
               />
             </div>
@@ -179,7 +180,7 @@
 
           <!-- Lien linkedin -->
           <div class="row mt-5">
-            <div class="col-12 text-center">
+            <div class="col-12 text-center fade-in">
               <a
                 href="https://www.linkedin.com/in/delphine-fumex/"
                 target="_blank"
@@ -196,11 +197,11 @@
 
       <!-- Compétences -->
       <section id="skills" class="container-fluid bg-dark py-5">
-        <div class="container">
+        <div class="container m-custom">
           <!-- Titre -->
           <div class="row">
             <div class="col-12 text-center mb-5">
-              <h2 class="text-blue">Compétences</h2>
+              <h2 class="text-blue fade-in">Compétences</h2>
             </div>
           </div>
 
@@ -208,9 +209,11 @@
           <div class="row g-4">
             <div class="col-12 col-md-6 col-lg-4">
               <!-- langages -->
-              <div class="card skill-card h-100">
+              <div class="card skill-card h-100 fade-in">
+                <div class="card-header bg-blue">
+                  <h3 class="text-center skill-title">Langages</h3>
+                </div>
                 <div class="card-body d-flex flex-column bg-light">
-                  <h3 class="text-center mb-4 skill-title">Langages</h3>
                   <ul class="skills-list">
                     <li><i class="fa-brands fa-html5"></i>HTML5</li>
                     <li><i class="fa-brands fa-css3-alt"></i>CSS3</li>
@@ -225,11 +228,13 @@
 
             <div class="col-12 col-md-6 col-lg-4">
               <!-- Frameworks et librairies -->
-              <div class="card skill-card h-100">
-                <div class="card-body d-flex flex-column bg-light">
-                  <h3 class="text-center mb-4 skill-title">
+              <div class="card skill-card h-100 fade-in">
+                <div class="card-header bg-blue">
+                  <h3 class="text-center skill-title">
                     Frameworks & librairies
                   </h3>
+                </div>
+                <div class="card-body d-flex flex-column bg-light">
                   <ul class="skills-list">
                     <li><i class="fa-brands fa-bootstrap"></i>Bootstrap</li>
                     <li><i class="fa-brands fa-sass"></i>SASS</li>
@@ -245,11 +250,13 @@
 
             <div class="col-12 col-md-6 col-lg-4">
               <!-- Environnement de travail -->
-              <div class="card skill-card h-100">
-                <div class="card-body d-flex flex-column bg-light">
-                  <h3 class="text-center mb-4 skill-title">
+              <div class="card skill-card h-100 fade-in">
+                <div class="card-header bg-blue">
+                  <h3 class="text-center skill-title">
                     Outils & environnement
                   </h3>
+                </div>
+                <div class="card-body d-flex flex-column bg-light">
                   <ul class="skills-list">
                     <li>
                       <i class="fa-brands fa-git-alt"></i>Git &
@@ -267,9 +274,11 @@
 
             <div class="col-12 col-md-6 col-lg-4">
               <!-- Hôtellerie -->
-              <div class="card skill-card h-100">
+              <div class="card skill-card h-100 fade-in">
+                <div class="card-header bg-blue">
+                  <h3 class="text-center skill-title">Outils hôteliers</h3>
+                </div>
                 <div class="card-body d-flex flex-column bg-light">
-                  <h3 class="text-center mb-4 skill-title">Outils hôteliers</h3>
                   <ul class="skills-list">
                     <li>D-Edge (CRS, CM et GDS)</li>
                     <li>E-Axess (CMS)</li>
@@ -284,9 +293,11 @@
 
             <div class="col-12 col-md-6 col-lg-4">
               <!-- Langues -->
-              <div class="card skill-card h-100">
+              <div class="card skill-card h-100 fade-in">
+                <div class="card-header bg-blue">
+                  <h3 class="text-center skill-title">Langues parlées</h3>
+                </div>
                 <div class="card-body d-flex flex-column bg-light">
-                  <h3 class="text-center mb-4 skill-title">Langues parlées</h3>
                   <ul class="skills-list">
                     <li>Français - Langue maternelle</li>
                     <li>Anglais - Niveau B1</li>
@@ -298,9 +309,11 @@
 
             <div class="col-12 col-md-6 col-lg-4">
               <!-- Bureautique -->
-              <div class="card skill-card h-100">
+              <div class="card skill-card h-100 fade-in">
+                <div class="card-header bg-blue">
+                  <h3 class="text-center skill-title">Bureautique</h3>
+                </div>
                 <div class="card-body d-flex flex-column bg-light">
-                  <h3 class="text-center mb-4 skill-title">Bureautique</h3>
                   <ul class="skills-list">
                     <li>Microsoft 365</li>
                     <li>Google Workspace</li>
@@ -314,20 +327,20 @@
       </section>
 
       <!-- Portfolio -->
-      <section id="portfolio" class="container-fluid py-5">
+      <section id="portfolio" class="container-fluid m-custom py-5">
         <div class="container">
           <!-- Titre -->
           <div class="row">
             <div class="col-12 text-center mb-5">
-              <h2>Projets</h2>
+              <h2 class="fade-in">Projets</h2>
             </div>
           </div>
 
           <!-- Les cartes-->
-          <div class="row g-4">
+          <div class="row justify-content-center g-4">
             <!-- projet 1 -->
-            <div class="col-12 col-md-4">
-              <div class="card project-card gb-dark h-100">
+            <div class="col-12 col-md-5">
+              <div class="card project-card h-100 fade-in">
                 <div class="card-header">
                   <img
                     src="/assets/img/projet1.png"
@@ -338,8 +351,8 @@
                   <div
                     class="overlay d-flex flex-column justify-content-center align-items-center"
                   >
-                    <button class="btn w-100 mx-auto">Voir</button>
-                    <button class="btn w-100 mx-auto">Code</button>
+                    <button class="btn mx-auto">Voir</button>
+                    <button class="btn mx-auto">Code</button>
                   </div>
                 </div>
 
@@ -364,8 +377,8 @@
             </div>
 
             <!-- projet 1 -->
-            <div class="col-12 col-md-4">
-              <div class="card project-card gb-dark h-100">
+            <div class="col-12 col-md-5">
+              <div class="card project-card h-100 fade-in">
                 <div class="card-header">
                   <img
                     src="/assets/img/projet1.png"
@@ -376,8 +389,8 @@
                   <div
                     class="overlay d-flex flex-column justify-content-center align-items-center"
                   >
-                    <button class="btn w-100 mx-auto">Voir</button>
-                    <button class="btn w-100 mx-auto">Code</button>
+                    <button class="btn mx-auto">Voir</button>
+                    <button class="btn mx-auto">Code</button>
                   </div>
                 </div>
 
@@ -402,8 +415,8 @@
             </div>
 
             <!-- projet 1 -->
-            <div class="col-12 col-md-4">
-              <div class="card project-card gb-dark h-100">
+            <div class="col-12 col-md-5">
+              <div class="card project-card h-100 fade-in">
                 <div class="card-header">
                   <img
                     src="/assets/img/projet1.png"
@@ -414,8 +427,8 @@
                   <div
                     class="overlay d-flex flex-column justify-content-center align-items-center"
                   >
-                    <button class="btn w-100 mx-auto">Voir</button>
-                    <button class="btn w-100 mx-auto">Code</button>
+                    <button class="btn mx-auto">Voir</button>
+                    <button class="btn mx-auto">Code</button>
                   </div>
                 </div>
 
@@ -443,12 +456,99 @@
       </section>
 
       <!-- Contact -->
-      <section id="contact" class="container-fluid py-5">
-        <div class="container">
-          <div class="row justify-content-between">
-            <div
-              class="col-12 col-md-10 col-lg-8 text-center mx-auto py-5"
-            ></div>
+      <section id="contact" class="container-fluid m-custom py-5">
+        <div class="container contact-container p-5">
+          <!-- Titre -->
+          <div class="row">
+            <div class="col-12 text-center text-blue mb-5">
+              <h2 class="fade-in">Contact</h2>
+            </div>
+          </div>
+
+          <!-- Contenu -->
+          <div class="row">
+            <!-- formulaire de contact -->
+            <div class="col-12 col-md-7 order-2 order-md-1 p-4">
+              <form action="" class="row justify-content-center fade-in">
+                <div class="col-12 mb-3">
+                  <label class="form-label text-light" for="last-name"
+                    >Nom</label
+                  >
+                  <input
+                    class="form-control border-blue"
+                    type="text"
+                    name="last_name"
+                    id="last-name"
+                  />
+                </div>
+
+                <div class="col-12 mb-3">
+                  <label class="form-label text-light" for="first-name"
+                    >Prénom</label
+                  >
+                  <input
+                    class="form-control border-blue"
+                    type="text"
+                    name="first_name"
+                    id="first-name"
+                  />
+                </div>
+
+                <div class="col-12 mb-3">
+                  <label class="form-label text-light" for="email">Email</label>
+                  <input
+                    class="form-control border-blue"
+                    type="text"
+                    name="email"
+                    id="email"
+                  />
+                </div>
+
+                <div class="col-12 mb-3">
+                  <label for="message" class="form-label text-light"
+                    >Message</label
+                  >
+                  <textarea
+                    class="form-control border-blue"
+                    id="message"
+                    rows="3"
+                  ></textarea>
+                </div>
+
+                <div class="col-12 mb-3">
+                  <div class="form-check">
+                    <input
+                      class="form-check-input border-blue"
+                      type="checkbox"
+                      value=""
+                      id="checkDefault"
+                    />
+                    <label
+                      class="form-check-label text-light"
+                      for="checkDefault"
+                    >
+                      J'accepte que mes données soient utilisées pour le
+                      traitement de mon message.
+                    </label>
+                  </div>
+                </div>
+
+                <div class="col-12 mb-3">
+                  <button type="submit" class="btn">Envoyer</button>
+                </div>
+              </form>
+            </div>
+
+            <!-- Paragraphe -->
+            <div class="col-12 col-md-5 order-1 order-md-2 p-4">
+              <p class="text-light fade-in">
+                Ayant toujours été passionné par l'utilisation des technologies
+                informatiques tant dans ma vie personnelle que professionnelle,
+                cette transition me permet de combiner ma rigueur, ma capacité
+                d'adaptation et mon aisance relationnelle acquises dans
+                l'industrie hôtelière avec mes nouvelles compétences techniques.
+              </p>
+            </div>
           </div>
         </div>
       </section>
@@ -458,7 +558,7 @@
       <div class="container p-4">
         <div class="row text-center justify-content-evenly">
           <!-- Réseaux sociaux -->
-          <div class="text-center col-12 col-md-4 mb-4">
+          <div class="text-center col-12 col-md-5 mb-2">
             <a
               href="https://www.linkedin.com/in/delphine-fumex/"
               target="_blank"
@@ -477,9 +577,14 @@
 
           <!-- Mentions et copyright -->
           <div
-            class="text-center col-12 col-md-6 d-flex justify-content-center align-items-center mb-4"
+            class="col-12 col-md-5 d-flex justify-content-center align-items-center mb-2"
           >
-            <p class="m-0">&#169;Delphine FUMEX | Tous droits réservés</p>
+            <a href="">Mentions légales</a>
+          </div>
+          <div class="text-center col-12 mb-2">
+            <p class="text-center">
+              &#169;Delphine FUMEX | Tous droits réservés
+            </p>
           </div>
         </div>
       </div>
