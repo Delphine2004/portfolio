@@ -82,6 +82,11 @@ p {
   font-size: 1.05rem;
 }
 
+i {
+  font-size: 2rem;
+  margin: 1.5rem;
+}
+
 .m-custom {
   margin: 5rem 0 5rem 0;
 }
@@ -111,10 +116,6 @@ footer p {
 }
 footer a {
   text-decoration: none;
-}
-footer i {
-  font-size: 2rem;
-  margin: 1.5rem;
 }
 footer a:hover,
 footer i:hover {
@@ -275,6 +276,9 @@ footer p {
 }
 .contact-container:hover {
   transform: translateY(-5px);
+}
+.contact-container i:hover {
+  color: #f2d680;
 }
 
 .btn {
