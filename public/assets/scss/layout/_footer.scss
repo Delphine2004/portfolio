@@ -4,17 +4,29 @@
 footer {
   min-height: variables.$footer-height-mobile;
   background-color: colors.$dark;
-  color: colors.$grey;
+
+  a,
+  i,
+  p {
+    color: colors.$grey;
+  }
 
   a {
-    color: colors.$grey;
     text-decoration: none;
   }
 
   i {
-    color: colors.$grey;
     font-size: 2rem;
     margin: 1.5rem;
+  }
+
+  a:hover,
+  i:hover {
+    color: colors.$blue;
+  }
+
+  p {
+    font-size: 0.8rem;
   }
 
   @media (min-width: 768px) {
