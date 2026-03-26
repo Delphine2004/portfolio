@@ -206,6 +206,10 @@ footer p {
   justify-content: center;
   gap: 10px;
 }
+.skill-card .card-body .skills-list li i {
+  font-size: 1rem;
+  margin: 0.2rem;
+}
 
 /* Section projets*/
 .project-card {
@@ -221,17 +225,26 @@ footer p {
 .project-card .card-header {
   position: relative;
   width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   overflow: hidden;
   padding: 2rem;
 }
-.project-card .card-header .project-img {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
+.project-card .card-header img {
+  height: 400px !important;
   object-fit: cover;
-  transition: transform 0.3s ease, filter 0.3s ease;
+  object-position: top;
+}
+@media (min-width: 768px) {
+  .project-card .card-header img {
+    height: 250px !important;
+  }
+}
+@media (min-width: 992px) {
+  .project-card .card-header img {
+    height: 400px !important;
+  }
 }
 .project-card .card-header .overlay {
   position: absolute;
@@ -257,12 +270,20 @@ footer p {
 .project-card .card-body {
   padding: 1.5rem;
 }
+.project-card .card-body h3 {
+  font-size: 1.3rem;
+}
+.project-card .card-body h4 {
+  font-size: 1.1rem;
+}
 .project-card .card-footer {
+  min-height: 130px;
   padding: 1rem;
 }
 .project-card .card-footer .icons i {
   color: #f2d680;
   font-size: 2rem;
+  margin: 0.5rem;
 }
 
 /* Section contact*/
