@@ -3,9 +3,12 @@ $blue: #2ea7f2;
 $yellow: #f2d680;
 $grey: #f2ede4;
 
+$border-dark: 1px solid $dark;
+$border-blue: 1px solid $blue;
+
 .bg-dark {
-  background-color: $dark;
-  color: $grey;
+  background-color: $dark !important;
+  color: $grey !important;
 }
 
 .bg-light {
@@ -13,14 +16,28 @@ $grey: #f2ede4;
   color: $dark !important;
 }
 
+.bg-blue {
+  background-color: $blue !important;
+  color: $dark !important;
+}
+
 .text-light {
-  color: $grey;
+  color: $grey !important;
 }
 
 .text-blue {
-  color: $blue;
+  color: $blue !important;
 }
 
 .text-yellow {
-  color: $yellow;
+  color: $yellow !important;
+}
+
+.border-dark {
+  border: $border-dark !important;
+  border-radius: 1rem !important;
+}
+
+.border-blue {
+  border: $border-blue !important;
 }
