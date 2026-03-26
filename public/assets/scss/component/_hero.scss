@@ -12,8 +12,7 @@
   h2 {
     font-size: 3rem !important;
   }
-  @media (min-width: 992px) {
-    min-height:unset;
+  @media (min-width: 576px) {
+    min-height: unset;
   }
-
 }
