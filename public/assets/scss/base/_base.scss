@@ -3,35 +3,39 @@
 @use "../utils/variables";
 
 body {
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
-    font-family: fonts.$font-secondary !important;
-    font-size: fonts.$font-size-base !important;
-    line-height: 1.4;
-    background-color: colors.$grey !important;
-    color: colors.$dark !important;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  font-family: fonts.$font-secondary !important;
+  font-size: fonts.$font-size-base !important;
+  line-height: 1.4;
+  background-color: colors.$grey !important;
+  color: colors.$dark !important;
 }
 
 header,
 footer {
-    flex-shrink: 0; /* Empêche le header/footer de rétrécir */
+  flex-shrink: 0; /* Empêche le header/footer de rétrécir */
 }
 
 main {
-    flex-grow: 1; /* prend tout l'espace disponible */
+  flex-grow: 1; /* prend tout l'espace disponible */
 }
 
 h1,
 h2,
 h3,
 h4 {
-    font-family: fonts.$font-primary !important;
-    font-weight: bold !important;
+  font-family: fonts.$font-primary !important;
+  font-weight: bold !important;
 }
 
 p {
-    text-align: left;
-    line-height: 1.7;
-    font-size: 1.05rem;
+  text-align: left;
+  line-height: 1.7;
+  font-size: 1.05rem;
+}
+
+.m-custom {
+  margin: 5rem 0 5rem 0;
 }
