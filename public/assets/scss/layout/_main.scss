@@ -1,14 +1,24 @@
 @use "../utils/colors";
 
-.fade-in {
-  opacity: 0;
-  transform: translateY(30px);
-  transition: all 0.6s ease;
-}
+/* Section Hero*/
+#hero {
+  background-image: url("/assets/img/hero.webp");
+  background-size: cover; /* L'image couvre toute la section */
+  background-position: center; /* Centre l'image */
+  background-repeat: no-repeat;
+  min-height: 100vh;
+  color: colors.$grey;
 
-.fade-in.visible {
-  opacity: 1;
-  transform: translateY(0);
+  h1 {
+    font-size: 2rem !important;
+  }
+
+  h2 {
+    font-size: 3rem !important;
+  }
+  @media (min-width: 576px) {
+    min-height: unset;
+  }
 }
 
 /* Section présentation*/
@@ -17,6 +27,7 @@
     transition:
       transform 0.3s ease,
       box-shadow 0.3s ease;
+    border: colors.$border-dark;
     box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
   }
 
@@ -46,55 +57,66 @@
 }
 
 /* Section compétences*/
-.skill-card {
-  overflow: hidden;
-  transition:
-    transform 0.3s ease,
-    box-shadow 0.3s ease;
-  border: colors.$border-dark;
+#skills {
+  background-color: colors.$dark;
 
-  &:hover {
-    transform: translateY(-5px);
+  h2 {
+    color: colors.$blue;
   }
 
-  .card-header {
-    min-height: 100px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  .skill-card {
+    overflow: hidden;
+    transition:
+      transform 0.3s ease,
+      box-shadow 0.3s ease;
+    border: colors.$border-dark;
 
-    .skill-title {
-      font-weight: 600;
-      letter-spacing: 1px;
-      font-size: 1.5rem;
+    &:hover {
+      transform: translateY(-5px);
     }
-  }
 
-  .card-body {
-    padding: 2rem 1rem;
+    .card-header {
+      background-color: colors.$blue;
+      color: colors.$dark;
+      min-height: 100px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
 
-    .skills-list {
-      list-style: none;
-      padding: 0;
-      margin: 0;
+      .skill-title {
+        font-weight: 600;
+        letter-spacing: 1px;
+        font-size: 1.5rem;
+      }
+    }
 
-      li {
-        padding: 8px 12px;
-        margin-bottom: 8px;
-        background: rgba(0, 0, 0, 0.05);
-        border-radius: 8px;
+    .card-body {
+      background-color: colors.$grey;
+      color: colors.$dark;
 
-        font-weight: 500;
-        line-height: 1.6;
+      .skills-list {
+        list-style: none;
+        padding: 0;
+        margin: 0;
 
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        gap: 10px;
+        li {
+          padding: 8px 12px;
+          margin-bottom: 8px;
+          background: rgba(0, 0, 0, 0.05);
+          border-radius: calc(colors.$border-radius / 2);
 
-        i {
-          font-size: 1rem;
-          margin: 0.2rem;
+          font-weight: 500;
+          line-height: 1.6;
+
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          gap: 10px;
+
+          i {
+            font-size: 1rem;
+            margin: 0.2rem;
+          }
         }
       }
     }
@@ -167,10 +189,12 @@
 
     h3 {
       font-size: 1.3rem;
+      color: colors.$blue;
     }
 
     h4 {
       font-size: 1.1rem;
+      color: colors.$yellow;
     }
   }
 
@@ -191,7 +215,7 @@
   background-color: colors.$dark;
   color: colors.$grey;
   border: colors.$border-dark;
-  border-radius: 1rem !important;
+  border-radius: colors.$border-radius;
   overflow: hidden;
   transition:
     transform 0.3s ease,
@@ -201,7 +225,27 @@
     transform: translateY(-5px);
   }
 
+  h2,
+  a {
+    color: colors.$blue;
+  }
+
   i:hover {
     color: colors.$yellow;
+  }
+}
+
+/* Mentions*/
+.infos-card {
+  background-color: colors.$dark;
+  border: colors.$border-dark;
+  border-radius: colors.$border-radius;
+
+  h2 {
+    color: colors.$blue;
+  }
+
+  p {
+    color: colors.$grey;
   }
 }
