@@ -1,21 +1,21 @@
-name: Deploy site
+name: Deploy static site
 
 on:
   push:
     branches: ["main"]
 
 jobs:
-  deploy:
+  build-and-deploy:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Récupérer le code
+      - name: Checkout du code
         uses: actions/checkout@v4
 
-      - name: Préparer le site
+      - name: Déploiement sur GitHub Pages
         uses: actions/upload-pages-artifact@v3
         with:
           path: .
 
-      - name: Déployer
+      - name: Publication
         uses: actions/deploy-pages@v4
