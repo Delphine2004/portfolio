@@ -20,7 +20,7 @@ jobs:
       - name: Déploiement sur GitHub Pages
         uses: actions/upload-pages-artifact@v3
         with:
-          path: .
+          path: public/
 
       - name: Publication
         uses: actions/deploy-pages@v4
