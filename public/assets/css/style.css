@@ -197,17 +197,23 @@ footer p {
 }
 
 /* Section projets*/
-.project-card {
+#portfolio .filter-card {
+  background-color: #2ea7f2;
+  color: #262526 !important;
+  margin: 1rem auto;
+  padding: 1rem;
+}
+#portfolio .project-card {
   background-color: #262526 !important;
   color: #f2ede4 !important;
   overflow: hidden;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
-.project-card:hover {
+#portfolio .project-card:hover {
   transform: translateY(-5px);
   box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
 }
-.project-card .card-header {
+#portfolio .project-card .card-header {
   position: relative;
   width: 100%;
   display: flex;
@@ -216,22 +222,22 @@ footer p {
   overflow: hidden;
   padding: 2rem;
 }
-.project-card .card-header img {
+#portfolio .project-card .card-header img {
   height: 400px !important;
   object-fit: cover;
   object-position: top;
 }
 @media (min-width: 768px) {
-  .project-card .card-header img {
+  #portfolio .project-card .card-header img {
     height: 250px !important;
   }
 }
 @media (min-width: 992px) {
-  .project-card .card-header img {
+  #portfolio .project-card .card-header img {
     height: 400px !important;
   }
 }
-.project-card .card-header .overlay {
+#portfolio .project-card .card-header .overlay {
   position: absolute;
   top: 0;
   left: 0;
@@ -243,31 +249,31 @@ footer p {
   gap: 1rem;
   padding: 2rem;
 }
-.project-card .card-header .overlay .btn {
+#portfolio .project-card .card-header .overlay .btn {
   width: 70%;
 }
-.project-card .card-header:hover .overlay {
+#portfolio .project-card .card-header:hover .overlay {
   opacity: 1;
 }
-.project-card .card-header:hover .project-img {
+#portfolio .project-card .card-header:hover .project-img {
   transform: scale(1.05);
 }
-.project-card .card-body {
+#portfolio .project-card .card-body {
   padding: 1.5rem;
 }
-.project-card .card-body h3 {
+#portfolio .project-card .card-body h3 {
   font-size: 1.3rem;
   color: #2ea7f2;
 }
-.project-card .card-body h4 {
+#portfolio .project-card .card-body h4 {
   font-size: 1.1rem;
   color: #f2d680;
 }
-.project-card .card-footer {
+#portfolio .project-card .card-footer {
   min-height: 130px;
   padding: 1rem;
 }
-.project-card .card-footer .icons i {
+#portfolio .project-card .card-footer .icons i {
   color: #f2d680;
   font-size: 2rem;
   margin: 0.5rem;
