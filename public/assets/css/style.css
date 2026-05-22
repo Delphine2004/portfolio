@@ -197,12 +197,6 @@ footer p {
 }
 
 /* Section projets*/
-#portfolio .filter-card {
-  background-color: #2ea7f2;
-  color: #262526 !important;
-  margin: 1rem auto;
-  padding: 1rem;
-}
 #portfolio .project-card {
   background-color: #262526 !important;
   color: #f2ede4 !important;
