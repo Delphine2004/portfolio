@@ -38,7 +38,7 @@
     <link rel="icon" href="assets/img/logo.webp" />
 
     <!-- script -->
-    <script defer src="assets/js/animation.js"></script>
+    <script defer type="module" src="assets/js/animation.js"></script>
     <script
       defer
       src="https://kit.fontawesome.com/01e8d51dea.js"
@@ -326,18 +326,19 @@
       <!-- Portfolio -->
       <section id="portfolio" class="container-fluid m-custom py-5">
         <div class="container">
-          <!-- Titre -->
           <div class="row">
+            <!-- Titre -->
             <div class="col-12 text-center mb-5">
               <h2 class="fade-in">Projets</h2>
             </div>
+            <!-- Filtres -->
             <div class="col-12">
               <div
                 class="d-flex flex-md-row flex-wrap justify-content-around gap-4 p-1 my-1"
               >
                 <div class="form-check p-1">
                   <input
-                    class="form-check-input"
+                    class="form-check-input input-filter"
                     type="checkbox"
                     id="filter-online"
                   />
@@ -347,7 +348,7 @@
                 </div>
                 <div class="form-check p-1">
                   <input
-                    class="form-check-input"
+                    class="form-check-input input-filter"
                     type="checkbox"
                     id="filter-student"
                   />
@@ -357,7 +358,7 @@
                 </div>
                 <div class="form-check p-1">
                   <input
-                    class="form-check-input"
+                    class="form-check-input input-filter"
                     type="checkbox"
                     id="filter-front"
                   />
@@ -367,7 +368,7 @@
                 </div>
                 <div class="form-check p-1">
                   <input
-                    class="form-check-input"
+                    class="form-check-input input-filter"
                     type="checkbox"
                     id="filter-fullstack"
                   />
@@ -377,7 +378,7 @@
                 </div>
                 <div class="form-check p-1">
                   <input
-                    class="form-check-input"
+                    class="form-check-input input-filter"
                     type="checkbox"
                     id="filter-php"
                   />
@@ -385,7 +386,7 @@
                 </div>
                 <div class="form-check p-1">
                   <input
-                    class="form-check-input"
+                    class="form-check-input input-filter"
                     type="checkbox"
                     id="filter-symfony"
                   />
@@ -400,7 +401,9 @@
           <!-- Les cartes-->
           <div class="row justify-content-center g-4">
             <!-- projet 1 -->
-            <div class="col-12 col-md-6">
+            <div
+              class="col-12 col-md-6 project student-projet fullstack-projet php-projet"
+            >
               <div class="card project-card h-100 fade-in">
                 <div class="card-header">
                   <img
@@ -468,7 +471,9 @@
             </div>
 
             <!-- projet 2 -->
-            <div class="col-12 col-md-6">
+            <div
+              class="col-12 col-md-6 project student-projet fullstack-projet php-projet symfony-projet"
+            >
               <div class="card project-card h-100 fade-in">
                 <div class="card-header">
                   <img
@@ -542,7 +547,7 @@
             </div>
 
             <!-- projet 3 -->
-            <div class="col-12 col-md-6">
+            <div class="col-12 col-md-6 project online-projet front-projet">
               <div class="card project-card h-100 fade-in">
                 <div class="card-header">
                   <img
@@ -619,12 +624,12 @@
             </div>
 
             <!-- projet 4 -->
-            <div class="col-12 col-md-6">
+            <div class="col-12 col-md-6 project online-projet front-projet">
               <div class="card project-card h-100 fade-in">
                 <div class="card-header">
                   <img
                     src="assets/img/projet4.png"
-                    alt="Capture d'écran de l'interface du portfolio de Delphine FUMEX"
+                    alt="Capture d'écran de l'interface du site vitrine de Valentine Vidal"
                     class="img-fluid"
                   />
                   <!-- Overlay semi-transparent -->
