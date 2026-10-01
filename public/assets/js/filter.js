@@ -6,6 +6,7 @@ export function applyFilters() {
     { checkbox: "filter-fullstack", className: "fullstack-projet" },
     { checkbox: "filter-php", className: "php-projet" },
     { checkbox: "filter-symfony", className: "symfony-projet" },
+    { checkbox: "filter-data", className: "data-analyse" },
   ];
 
   const hasActiveFilter = filters.some(
