@@ -259,9 +259,13 @@ footer p {
   font-size: 1.3rem;
   color: #2ea7f2;
 }
-#portfolio .project-card .card-body h4 {
+#portfolio .project-card .card-body h4,
+#portfolio .project-card .card-body h5 {
   font-size: 1.1rem;
   color: #f2d680;
+}
+#portfolio .project-card .card-body p {
+  margin-bottom: 1rem;
 }
 #portfolio .project-card .card-footer {
   min-height: 130px;

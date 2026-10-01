@@ -193,9 +193,14 @@
         color: colors.$blue;
       }
 
-      h4 {
+      h4,
+      h5 {
         font-size: 1.1rem;
         color: colors.$yellow;
+      }
+
+      p {
+        margin-bottom: 1rem;
       }
     }
 
